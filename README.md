@@ -27,7 +27,7 @@ TUJUANNYA :
 
   Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0).
 
-  # PROSESNYALEARNING DAN MODEL
+  # PROSESNYA DATASET DIOLAH
 
   Import Library
 1. Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
