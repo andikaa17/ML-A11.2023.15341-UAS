@@ -58,3 +58,31 @@ Sebuah data pasien baru diberikan sebagai input (misalnya: (6,148,72,35,0,33.6,0
 
 10. Mencetak Hasil Prediksi
 Hasil dari prediksi ditampilkan. Jika model memprediksi 0, maka pasien tidak terkena diabetes; jika 1, maka pasien terkena diabetes.
+
+KESIMPULAN : Secara keseluruhan, kode ini menjalankan rangkaian proses mulai dari membaca dataset, memisahkan fitur dan label, melatih model klasifikasi, hingga mengevaluasi kinerjanya menggunakan data uji. Dengan memanfaatkan algoritma Logistic Regression, model mampu melakukan prediksi terhadap kemungkinan seseorang terkena penyakit jantung, serta menghasilkan laporan klasifikasi yang mencerminkan tingkat akurasi dan efektivitas model tersebut.
+
+# HASIL EVALUASI MODELNYA
+
+![image](https://github.com/user-attachments/assets/4fe58840-9686-4994-8e5f-c4b8007eccd3)
+
+- Precision:
+Tidak Terkena Diabetes: 0.77 (77% dari prediksi tidak terkena diabetes adalah benar)
+Terkena Diabetes: 0.70 (70% dari prediksi terkena diabetes adalah benar)
+
+- Recall:
+Tidak Terkena Diabetes: 0.88 (88% dari pasien yang benar-benar tidak terkena diabetes berhasil dikenali)
+Terkena Diabetes: 0.52 (52% dari pasien yang benar-benar terkena diabetes berhasil dikenali oleh model)
+
+- F1-Score:
+Tidak Terkena Diabetes: 0.82 (Rata-rata harmonis dari precision dan recall)
+Terkena Diabetes: 0.60
+
+- Akurasi:
+75% (75% dari keseluruhan prediksi model adalah benar)
+
+- Macro avg:
+Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
+
+- Weighted avg:
+Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
+
