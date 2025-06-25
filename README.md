@@ -24,3 +24,5 @@ TUJUANNYA :
 - DiabetesPedigreeFunction: Nilai ini merepresentasikan riwayat genetik terhadap diabetes berdasarkan silsilah keluarga. Semakin tinggi nilainya, semakin besar kemungkinan faktor keturunan berpengaruh.
 - Age: Umur pasien dalam tahun. Risiko diabetes cenderung meningkat seiring bertambahnya usia.
 - Outcome: Merupakan label (target) dari dataset ini. Nilai 1 berarti pasien terdiagnosis diabetes, sedangkan 0 berarti tidak.
+
+  Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0).
