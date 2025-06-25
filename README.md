@@ -26,3 +26,35 @@ TUJUANNYA :
 - Outcome: Merupakan label (target) dari dataset ini. Nilai 1 berarti pasien terdiagnosis diabetes, sedangkan 0 berarti tidak.
 
   Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0).
+
+  # PROSESNYALEARNING DAN MODEL
+
+  Import Library
+1. Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
+
+2. Membaca Data
+Data mengenai penyakit diabetes dibaca dari file CSV bernama diabetes.csv menggunakan pandas, dan disimpan ke dalam variabel diabetes_data.
+
+3. Memisahkan Fitur dan Label
+Data dipisahkan menjadi fitur (X) dan label (Y), di mana X berisi semua kolom kecuali kolom Outcome, sedangkan Y berisi kolom Outcome sebagai target prediksi, dengan nilai 1 untuk pasien yang terkena diabetes dan 0 untuk yang tidak.
+
+4. Mencetak Label
+Label Y dicetak untuk melihat distribusi jumlah pasien yang terkena dan tidak terkena diabetes.
+
+5. Membagi Data
+Data dibagi menjadi data pelatihan dan pengujian menggunakan fungsi train_test_split dengan proporsi 80:20. Parameter stratify=Y digunakan untuk menjaga distribusi kelas antara data latih dan data uji, dan random_state digunakan agar pembagian data selalu konsisten saat dijalankan ulang.
+
+6. Mencetak Bentuk Data
+Ukuran data lengkap, data pelatihan (X_train), dan data pengujian (X_test) dicetak untuk memverifikasi bahwa pembagian data telah dilakukan dengan benar.
+
+7. Membuat dan Melatih Model
+Model klasifikasi Logistic Regression dibuat dan dilatih menggunakan data pelatihan (X_train dan Y_train).
+
+8. Evaluasi Model pada Data Pengujian
+Model digunakan untuk memprediksi hasil pada data pengujian (X_test). Hasil prediksi kemudian dievaluasi menggunakan classification_report, yang menampilkan nilai precision, recall, dan F1-score untuk kedua kelas: pasien yang tidak terkena diabetes dan yang terkena diabetes.
+
+9. Prediksi Data Baru
+Sebuah data pasien baru diberikan sebagai input (misalnya: (6,148,72,35,0,33.6,0.627,50)), lalu data tersebut diubah menjadi array numpy dan di-reshape agar sesuai dengan format input model. Model kemudian memprediksi apakah pasien tersebut terkena diabetes atau tidak.
+
+10. Mencetak Hasil Prediksi
+Hasil dari prediksi ditampilkan. Jika model memprediksi 0, maka pasien tidak terkena diabetes; jika 1, maka pasien terkena diabetes.
