@@ -10,6 +10,7 @@ TUJUANNYA :
 2. Mengevaluasi kinerja model menggunakan metrik evaluasI.
 3. Membuat rekomendasi perbaikan
 
-# MODEL PENYELESAIIAN
+# MODEL PENYELESAIAN
 
-![image](https://github.com/user-attachments/assets/652cc505-31d8-4725-8b65-bb0ca6550934)
+![image](https://github.com/user-attachments/assets/e0894434-2919-4055-a053-1e2650199c64)
+
