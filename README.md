@@ -29,8 +29,8 @@ TUJUANNYA :
 
   # PROSESNYA DATASET DIOLAH
 
-  Import Library
-1. Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
+1. Import Library
+ Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
 
 2. Membaca Data
 Data mengenai penyakit diabetes dibaca dari file CSV bernama diabetes.csv menggunakan pandas, dan disimpan ke dalam variabel diabetes_data.
@@ -66,16 +66,17 @@ KESIMPULAN : Secara keseluruhan, kode ini menjalankan rangkaian proses mulai dar
 ![image](https://github.com/user-attachments/assets/4fe58840-9686-4994-8e5f-c4b8007eccd3)
 
 - Precision:
-Tidak Terkena Diabetes: 0.77 (77% dari prediksi tidak terkena diabetes adalah benar)
-Terkena Diabetes: 0.70 (70% dari prediksi terkena diabetes adalah benar)
+1. Tidak Terkena Diabetes: 0.77 (77% dari prediksi tidak terkena diabetes adalah benar)
+
+2. Terkena Diabetes: 0.70 (70% dari prediksi terkena diabetes adalah benar)
 
 - Recall:
-Tidak Terkena Diabetes: 0.88 (88% dari pasien yang benar-benar tidak terkena diabetes berhasil dikenali)
-Terkena Diabetes: 0.52 (52% dari pasien yang benar-benar terkena diabetes berhasil dikenali oleh model)
+1. Tidak Terkena Diabetes: 0.88 (88% dari pasien yang benar-benar tidak terkena diabetes berhasil dikenali)
+2. Terkena Diabetes: 0.52 (52% dari pasien yang benar-benar terkena diabetes berhasil dikenali oleh model)
 
 - F1-Score:
-Tidak Terkena Diabetes: 0.82 (Rata-rata harmonis dari precision dan recall)
-Terkena Diabetes: 0.60
+1. Tidak Terkena Diabetes: 0.82 (Rata-rata harmonis dari precision dan recall)
+2. Terkena Diabetes: 0.60
 
 - Akurasi:
 75% (75% dari keseluruhan prediksi model adalah benar)
