@@ -10,4 +10,5 @@ TUJUANNYA :
 3. Membuat rekomendasi perbaikan
 
 #MODEL PENYELESAIIAN
+
 ![image](https://github.com/user-attachments/assets/652cc505-31d8-4725-8b65-bb0ca6550934)
