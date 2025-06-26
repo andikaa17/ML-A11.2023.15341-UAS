@@ -27,7 +27,7 @@ TUJUANNYA :
 
   Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0).
 
-  # PROSESNYA DATASET DIOLAH
+  # PROSES DATASET DIOLAH
 
 1. Import Library
  Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
@@ -150,4 +150,41 @@ Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah 
 Kesimpulan:
 Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
 
+# LANGKAH PROSES PREDIKSI MENGUNAKAN LOGISTIC REGRESSION
+
+1. Input Data Pasien
+Data pasien dimasukkan dalam bentuk tuple seperti berikut:
+input_data = (6,148,72,35,0,33.6,0.627,50)
+Nilai-nilai tersebut menggambarkan fitur diatas: 
+Pregnancies: 6
+Glucose: 148
+BloodPressure: 72
+SkinThickness: 35
+Insulin: 0
+BMI: 33.6
+Diabetes Pedigree Function: 0.627
+Age: 50
+
+2. Mengubah Format ke Array Numpy
+Data input dikonversi ke bentuk array menggunakan numpy agar bisa dibaca oleh model:
+input_data_as_numpy_array = np.asarray(input_data)
+
+3. Merapikan Bentuk Data
+Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape:
+input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
+
+4. Melakukan Prediksi
+Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau tidak:
+prediction = model.predict(input_data_reshaped)
+
+5. Menampilkan Hasil
+Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
+if (prediction[0] == 0):
+    print("Pasien tidak terkena diabetes")
+else:
+    print("Pasien terkena diabetes")
+
+![image](https://github.com/user-attachments/assets/6ed5e076-7b30-43d6-9357-4dd58f887d20)
+
+KESIMPULANNYA : Model berhasil memproses data input pasien dan memberikan hasil prediksi. Jika output dari model adalah 1, maka pasien diperkirakan mengidap diabetes. Sebaliknya, jika hasilnya 0, maka pasien tidak terindikasi diabetes. Hasil ini dapat digunakan sebagai bahan pertimbangan awal dalam proses diagnosis, namun tidak menggantikan pemeriksaan medis yang sebenarnya. Evaluasi lebih lanjut tetap perlu dilakukan oleh tenaga kesehatan profesional.
 
