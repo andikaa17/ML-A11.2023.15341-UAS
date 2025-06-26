@@ -154,8 +154,8 @@ Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik da
 
 1. Input Data Pasien
 Data pasien dimasukkan dalam bentuk tuple seperti berikut:
-input_data = (6,148,72,35,0,33.6,0.627,50)
-Nilai-nilai tersebut menggambarkan fitur diatas: 
+- input_data = (6,148,72,35,0,33.6,0.627,50)
+Nilai-nilai tersebut menggambarkan fitur yaitu : 
 Pregnancies: 6
 Glucose: 148
 BloodPressure: 72
@@ -167,21 +167,21 @@ Age: 50
 
 2. Mengubah Format ke Array Numpy
 Data input dikonversi ke bentuk array menggunakan numpy agar bisa dibaca oleh model:
-input_data_as_numpy_array = np.asarray(input_data)
+- input_data_as_numpy_array = np.asarray(input_data)
 
 3. Merapikan Bentuk Data
 Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape:
-input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
+- input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
 
 4. Melakukan Prediksi
 Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau tidak:
-prediction = model.predict(input_data_reshaped)
+- prediction = model.predict(input_data_reshaped)
 
 5. Menampilkan Hasil
 Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
-if (prediction[0] == 0):
+- if (prediction[0] == 0):
     print("Pasien tidak terkena diabetes")
-else:
+ else:
     print("Pasien terkena diabetes")
 
 ![image](https://github.com/user-attachments/assets/6ed5e076-7b30-43d6-9357-4dd58f887d20)
