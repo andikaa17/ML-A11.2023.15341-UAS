@@ -1,6 +1,6 @@
 # ML-UAS2025
 
-# PREDIKSI PENYAKIT DIABETES MENGUNAKAN MODEL LOGIC REGRESSION
+# PREDIKSI PENYAKIT DIABETES MENGUNAKAN MODEL LOGISTIC REGRESSION
 
    Diabetes adalah penyakit yang banyak dialami masyarakat dan bisa menyebabkan komplikasi serius jika tidak ditangani sejak awal. Sayangnya, proses diagnosa sering butuh waktu dan bisa saja kurang akurat jika hanya mengandalkan pemeriksaan manual.
 Project ini bertujuan membuat model machine learning untuk memprediksi apakah seseorang berisiko diabetes atau tidak. Model ini menggunakan beberapa faktor seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, insulin, BMI, riwayat keluarga (silsilah), dan usia. Diharapkan model ini bisa membantu proses deteksi lebih cepat dan akurat.
@@ -137,6 +137,17 @@ Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
 - Weighted avg:
 Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
 
-# KESIMPULAN PERFOMA 
+# KESIMPULAN PERFOMA DARI 3 MODEL
+ Rekomendasi:
+1. Validasi Model Lanjutan: Uji model dengan data yang berbeda dari data latih untuk memastikan model tidak hanya bekerja baik pada data yang sudah dikenalnya, tetapi juga mampu menggeneralisasi ke data baru.
+
+2. Tuning Hyperparameter: Lakukan pengaturan nilai hyperparameter secara optimal (misalnya menggunakan GridSearchCV) untuk meningkatkan performa model secara keseluruhan.
+
+3. Pengembangan Fitur (Feature Engineering): Analisis lebih lanjut terhadap fitur yang ada sangat disarankan. Ada kemungkinan fitur tertentu kurang relevan, atau bahkan ada fitur baru yang bisa ditambahkan untuk memperkuat prediksi.
+
+4. Cross-Validation: Gunakan teknik validasi silang untuk memastikan performa model konsisten dan tidak hanya bergantung pada satu pembagian data saja.
+
+Kesimpulan:
+Secara Keselruhan Model LogisticRegression yang dibangun memiliki performa yang cukup baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
 
 
