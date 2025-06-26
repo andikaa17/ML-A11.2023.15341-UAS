@@ -148,6 +148,6 @@ Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah 
 4. Cross-Validation: Gunakan teknik validasi silang untuk memastikan performa model konsisten dan tidak hanya bergantung pada satu pembagian data saja.
 
 Kesimpulan:
-Secara Keselruhan Model LogisticRegression yang dibangun memiliki performa yang cukup baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
+Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
 
 
