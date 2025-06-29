@@ -154,7 +154,8 @@ Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik da
 
 1. Input Data Pasien
 Data pasien dimasukkan dalam bentuk tuple seperti berikut:
-- input_data = (6,148,72,35,0,33.6,0.627,50)
+![image](https://github.com/user-attachments/assets/a229b2e0-0a58-411a-b7ae-3cd8350b2743)
+
 Nilai-nilai tersebut menggambarkan fitur yaitu : 
 Pregnancies: 6
 Glucose: 148
@@ -167,23 +168,24 @@ Age: 50
 
 2. Mengubah Format ke Array Numpy
 Data input dikonversi ke bentuk array menggunakan numpy agar bisa dibaca oleh model:
-- input_data_as_numpy_array = np.asarray(input_data)
+![image](https://github.com/user-attachments/assets/91a176a5-3330-4ec5-84a1-60ac12faadf7)
+
 
 3. Merapikan Bentuk Data
 Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape:
-- input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
+![image](https://github.com/user-attachments/assets/80f52c8c-cd4c-4ecb-ad65-e0a56b5127ff)
+
 
 4. Melakukan Prediksi
 Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau tidak:
-- prediction = model.predict(input_data_reshaped)
+![image](https://github.com/user-attachments/assets/2429bd08-f72b-448d-90a0-23e4436210e2)
+
 
 5. Menampilkan Hasil
 Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
-- if (prediction[0] == 0):
-    print("Pasien tidak terkena diabetes")
- else:
-    print("Pasien terkena diabetes")
+![image](https://github.com/user-attachments/assets/b6d0b971-82da-4b97-889e-67f32ed49d51)
 
+Hasil setelah diprediksi
 ![image](https://github.com/user-attachments/assets/6ed5e076-7b30-43d6-9357-4dd58f887d20)
 
 KESIMPULANNYA : Model berhasil memproses data input pasien dan memberikan hasil prediksi. Jika output dari model adalah 1, maka pasien diperkirakan mengidap diabetes. Sebaliknya, jika hasilnya 0, maka pasien tidak terindikasi diabetes. Hasil ini dapat digunakan sebagai bahan pertimbangan awal dalam proses diagnosis, namun tidak menggantikan pemeriksaan medis yang sebenarnya. Evaluasi lebih lanjut tetap perlu dilakukan oleh tenaga kesehatan profesional.
