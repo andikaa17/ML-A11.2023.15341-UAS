@@ -38,8 +38,7 @@ Berikut adalah penjelasan setiap atribut yang digunakan dalam dataset ini:
 
 Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0). 
 
-4. Visualisasi Distribusi Fitur:
-
+Visualisasi Distribusi Fitur:
 Berdasarkan hasil visualisasi distribusi, fitur `Glucose` menunjukkan sebaran nilai yang cukup bervariasi, dengan dominasi nilai sedang hingga tinggi. Hal ini mendukung temuan bahwa kadar glukosa tinggi merupakan indikator kuat risiko diabetes.
 
 
