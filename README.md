@@ -1,9 +1,9 @@
-# ML-UAS2025
+# ML-UAS-2025
 
 # PREDIKSI PENYAKIT DIABETES MENGUNAKAN MODEL LOGISTIC REGRESSION
 
    Diabetes adalah penyakit yang banyak dialami masyarakat dan bisa menyebabkan komplikasi serius jika tidak ditangani sejak awal. Sayangnya, proses diagnosa sering butuh waktu dan bisa saja kurang akurat jika hanya mengandalkan pemeriksaan manual.
-Project ini bertujuan membuat model machine learning untuk memprediksi apakah seseorang berisiko diabetes atau tidak. Model ini menggunakan beberapa faktor seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, insulin, BMI, riwayat keluarga (silsilah), dan usia. Diharapkan model ini bisa membantu proses deteksi lebih cepat dan akurat.
+Proyek ini bertujuan membuat model machine learning untuk memprediksi apakah seseorang berisiko diabetes atau tidak. Model ini menggunakan beberapa faktor seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, insulin, BMI, riwayat keluarga (silsilah), dan usia. Diharapkan model ini bisa membantu proses deteksi lebih cepat dan akurat.
 
 # TUJUANNYA YANG AKAN DICAPAI :
 1. Membangun model machine learning yang dapat memprediksi kemungkinan seseorang terkena penyakit diabetes berdasarkan data medis.
@@ -42,9 +42,10 @@ Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk
 
 Berdasarkan hasil visualisasi distribusi, fitur `Glucose` menunjukkan sebaran nilai yang cukup bervariasi, dengan dominasi nilai sedang hingga tinggi. Hal ini mendukung temuan bahwa kadar glukosa tinggi merupakan indikator kuat risiko diabetes.
 
+
 ![download (1)](https://github.com/user-attachments/assets/d708ca08-a0b4-45d9-b470-15129d8b14c8)
 
-Selain itu, fitur `SkinThickness` dan `BloodPressure` juga memperlihatkan pola distribusi yang tidak merata, di mana nilai-nilai tertentu cenderung mendominasi. Pola-pola ini penting untuk dianalisis karena dapat memengaruhi performa model dalam membedakan antara pasien yang terkena dan tidak terkena diabetes.
+Selain itu, fitur seperti SkinThickness dan BloodPressure menunjukkan distribusi tidak merata, dengan nilai-nilai tertentu yang mendominasi. Pola-pola ini penting untuk dianalisis karena dapat memengaruhi performa model dalam membedakan antara pasien yang terkena dan tidak terkena diabetes.
 
 ![download (3)](https://github.com/user-attachments/assets/b294f091-a146-45b6-aef2-770f72b49f10)
 
