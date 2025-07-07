@@ -115,7 +115,7 @@ Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
 Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
 
 Kesimpulan:
-Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
+Secara keseluruhan, model Logistic Regression memiliki performa yang cukup baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil evaluasi pada data uji, model ini mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai, yaitu sebesar 75%, serta nilai precision dan recall yang relatif baik. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes, meskipun diagnosis lebih lanjut tetap harus dilakukan oleh tenaga medis profesional.
 
 Rekomendasi Perbaikan :
 1. Bandingkan dengan Model Lain:
