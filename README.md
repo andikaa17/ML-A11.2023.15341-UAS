@@ -53,7 +53,7 @@ Selain itu, fitur `SkinThickness` dan `BloodPressure` juga memperlihatkan pola d
 
 
 
-  # PROSES DATASET DIOLAH DAN MODELING
+  # PROSES LEARNING DAN MODELING
 
 1. Import Library
  Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
@@ -115,6 +115,16 @@ Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah 
 
 Kesimpulan:
 Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
+
+Rekomendasi Perbaikan :
+1. Bandingkan dengan Model Lain:
+Coba gunakan dan evaluasi model lain seperti Random Forest, Support Vector Machine, atau KNN untuk mengetahui apakah ada model yang mampu memberikan akurasi, recall, atau F1-score yang lebih baik dibanding Logistic Regression.
+
+2. Gunakan Teknik Penyeimbangan Data:
+Karena data target (Outcome) tidak seimbang (lebih banyak pasien tidak terkena diabetes), pertimbangkan penggunaan teknik seperti SMOTE (Synthetic Minority Over-sampling Technique) atau undersampling agar model tidak bias terhadap kelas mayoritas.
+
+3. Terapkan Validasi Silang (Cross-Validation):
+Gunakan teknik k-fold cross-validation untuk mengevaluasi model secara lebih konsisten, karena hanya memisahkan satu kali (train_test_split) bisa membuat evaluasi terlalu tergantung pada cara data dibagi.
 
 # LANGKAH PROSES PREDIKSI MENGUNAKAN LOGISTIC REGRESSION
 
