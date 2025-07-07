@@ -14,6 +14,38 @@ TUJUANNYA :
 
 ![image](https://github.com/user-attachments/assets/e0894434-2919-4055-a053-1e2650199c64)
 
+# Exploratory Data Analysis (EDA)
+
+Beberapa analisis awal dilakukan untuk memahami karakteristik data:
+
+1. Distribusi Label (Outcome):
+   Data terdiri dari dua kelas:  
+   - 0 (tidak terkena diabetes): 500 data  
+   - 1 (terkena diabetes): 268 data  
+   Hal ini menunjukkan dataset sedikit **tidak seimbang**.
+
+2. Rata-rata Glukosa dan BMI:
+   - Rata-rata Glucose: 120 mg/dL
+   - Rata-rata BMI: 31.9
+   Kedua fitur ini memiliki nilai yang cukup tinggi, mendukung literatur bahwa keduanya berkontribusi pada risiko diabetes.
+
+3. Heatmap Korelasi:
+   Korelasi tertinggi dengan **Outcome** ditemukan pada:
+   - Glucose (0.47)
+   - BMI (0.31)
+   - Age (0.23)
+
+4. 4. Visualisasi Distribusi Fitur:
+
+Berdasarkan hasil visualisasi distribusi, fitur `Glucose` menunjukkan sebaran nilai yang cukup bervariasi, dengan dominasi nilai sedang hingga tinggi. Hal ini mendukung temuan bahwa kadar glukosa tinggi merupakan indikator kuat risiko diabetes.
+
+Selain itu, fitur `SkinThickness` dan `BloodPressure` juga memperlihatkan pola distribusi yang tidak merata, di mana nilai-nilai tertentu cenderung mendominasi. Pola-pola ini penting untuk dianalisis karena dapat memengaruhi performa model dalam membedakan antara pasien yang terkena dan tidak terkena diabetes.
+![download (1)](https://github.com/user-attachments/assets/d708ca08-a0b4-45d9-b470-15129d8b14c8)
+
+
+
+
+
 # PENJELASAN DATASET
 - Pregnancies: Jumlah kehamilan yang pernah dialami oleh pasien.
 - Glucose: Kadar glukosa plasma dalam darah setelah melakukan tes toleransi glukosa 2 jam. Semakin tinggi nilai ini, semakin besar kemungkinan pasien mengalami diabetes.
