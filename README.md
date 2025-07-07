@@ -49,7 +49,8 @@ Selain itu, fitur seperti SkinThickness dan BloodPressure menunjukkan distribusi
 
 ![download (3)](https://github.com/user-attachments/assets/b294f091-a146-45b6-aef2-770f72b49f10)
 
-![download (1)](https://github.com/user-attachments/assets/ee30b7a5-4aa2-434a-bd8a-a4945baf4a05)
+![download (2)](https://github.com/user-attachments/assets/ebefd3b9-251d-4dde-ab13-c85c1b8f3283)
+
 
 
 
