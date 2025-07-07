@@ -5,7 +5,7 @@
    Diabetes adalah penyakit yang banyak dialami masyarakat dan bisa menyebabkan komplikasi serius jika tidak ditangani sejak awal. Sayangnya, proses diagnosa sering butuh waktu dan bisa saja kurang akurat jika hanya mengandalkan pemeriksaan manual.
 Project ini bertujuan membuat model machine learning untuk memprediksi apakah seseorang berisiko diabetes atau tidak. Model ini menggunakan beberapa faktor seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, insulin, BMI, riwayat keluarga (silsilah), dan usia. Diharapkan model ini bisa membantu proses deteksi lebih cepat dan akurat.
 
-TUJUANNYA :
+# TUJUANNYA YANG AKAN DICAPAI :
 1. Membangun model machine learning yang dapat memprediksi kemungkinan seseorang terkena penyakit diabetes berdasarkan data medis.
 2. Mengevaluasi kinerja model menggunakan metrik evaluasI.
 3. Membuat rekomendasi perbaikan
@@ -14,52 +14,37 @@ TUJUANNYA :
 
 ![image](https://github.com/user-attachments/assets/e0894434-2919-4055-a053-1e2650199c64)
 
-# Exploratory Data Analysis (EDA)
+# Penjelasan Dataset, EDA dan Proses Features Dataset
+   Dataset yang digunakan dalam penelitian ini berasal dari situs web Kaggle, sebuah platform populer yang menyediakan berbagai dataset publik untuk keperluan pembelajaran mesin (machine learning) dan analisis data. Dataset ini bersifat terbuka, sehingga dapat diakses dan digunakan oleh siapa saja untuk keperluan penelitian dan pengembangan model prediktif. Dataset ini berisi data historis pasien yang terdiagnosis diabetes maupun yang tidak, dengan total 8 atribut medis dan 1 label (kelas). Atribut-atribut tersebut berkaitan dengan faktor risiko diabetes, seperti kadar glukosa, tekanan darah, indeks massa tubuh, serta riwayat keluarga.
+Berikut adalah penjelasan setiap atribut yang digunakan dalam dataset ini:
 
-Beberapa analisis awal dilakukan untuk memahami karakteristik data:
+1. Pregnancies: Jumlah kehamilan yang pernah dialami oleh pasien.
 
-1. Distribusi Label (Outcome):
-   Data terdiri dari dua kelas:  
-   - 0 (tidak terkena diabetes): 500 data  
-   - 1 (terkena diabetes): 268 data  
-   Hal ini menunjukkan dataset sedikit **tidak seimbang**.
+2. Glucose: Kadar glukosa dalam plasma darah setelah tes toleransi glukosa. Nilai yang tinggi menunjukkan risiko diabetes lebih besar.
 
-2. Rata-rata Glukosa dan BMI:
-   - Rata-rata Glucose: 120 mg/dL
-   - Rata-rata BMI: 31.9
-   Kedua fitur ini memiliki nilai yang cukup tinggi, mendukung literatur bahwa keduanya berkontribusi pada risiko diabetes.
+3. BloodPressure: Tekanan darah diastolik pasien saat istirahat (dalam mm Hg).
 
-3. Heatmap Korelasi:
-   Korelasi tertinggi dengan **Outcome** ditemukan pada:
-   - Glucose (0.47)
-   - BMI (0.31)
-   - Age (0.23)
+4. SkinThickness: Ketebalan lipatan kulit triceps (dalam mm) yang digunakan untuk mengukur lemak tubuh.
 
-4. 4. Visualisasi Distribusi Fitur:
+5. Insulin: Kadar insulin dalam darah 2 jam setelah makan (μU/ml), mencerminkan fungsi pankreas.
+
+6. BMI (Body Mass Index): Indeks massa tubuh pasien, dihitung dari berat dan tinggi badan.
+
+7. DiabetesPedigreeFunction: Skor yang menunjukkan kemungkinan diabetes berdasarkan riwayat keluarga.
+
+8. Age: Usia pasien (dalam tahun). Risiko diabetes biasanya meningkat seiring bertambahnya usia.
+
+9. Outcome: Merupakan label target. Nilai 1 berarti pasien terdiagnosis diabetes, sedangkan 0 berarti tidak.
+
+Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0). 
 
 Berdasarkan hasil visualisasi distribusi, fitur `Glucose` menunjukkan sebaran nilai yang cukup bervariasi, dengan dominasi nilai sedang hingga tinggi. Hal ini mendukung temuan bahwa kadar glukosa tinggi merupakan indikator kuat risiko diabetes.
 
-Selain itu, fitur `SkinThickness` dan `BloodPressure` juga memperlihatkan pola distribusi yang tidak merata, di mana nilai-nilai tertentu cenderung mendominasi. Pola-pola ini penting untuk dianalisis karena dapat memengaruhi performa model dalam membedakan antara pasien yang terkena dan tidak terkena diabetes.
 ![download (1)](https://github.com/user-attachments/assets/d708ca08-a0b4-45d9-b470-15129d8b14c8)
 
 
 
-
-
-# PENJELASAN DATASET
-- Pregnancies: Jumlah kehamilan yang pernah dialami oleh pasien.
-- Glucose: Kadar glukosa plasma dalam darah setelah melakukan tes toleransi glukosa 2 jam. Semakin tinggi nilai ini, semakin besar kemungkinan pasien mengalami diabetes.
-- BloodPressure: Tekanan darah diastolik pasien saat istirahat (dalam mm Hg).
-- SkinThickness: Ketebalan lipatan kulit triceps yang diukur dalam milimeter, digunakan sebagai indikator lemak tubuh.
-- Insulin: Kadar insulin dalam serum dua jam setelah makan (μU/ml). Nilai ini dapat mencerminkan seberapa baik tubuh mengatur gula darah.
-- BMI (Body Mass Index): Indeks massa tubuh pasien, dihitung dari berat badan (kg) dibagi tinggi badan kuadrat (m²). Nilai tinggi biasanya berkaitan dengan risiko diabetes.
-- DiabetesPedigreeFunction: Nilai ini merepresentasikan riwayat genetik terhadap diabetes berdasarkan silsilah keluarga. Semakin tinggi nilainya, semakin besar kemungkinan faktor keturunan berpengaruh.
-- Age: Umur pasien dalam tahun. Risiko diabetes cenderung meningkat seiring bertambahnya usia.
-- Outcome: Merupakan label (target) dari dataset ini. Nilai 1 berarti pasien terdiagnosis diabetes, sedangkan 0 berarti tidak.
-
-  Variabel-variabel ini digunakan sebagai fitur dalam model regresi logistik untuk memprediksi kemungkinan seseorang mengidap diabetes. Selain itu, dataset ini juga mencakup label (Outcome), yang menentukan apakah pasien terdiagnosis diabetes (1) atau tidak (0).
-
-  # PROSES DATASET DIOLAH
+  # PROSES DATASET DIOLAH DAN MODELING
 
 1. Import Library
  Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
@@ -91,7 +76,7 @@ Sebuah data pasien baru diberikan sebagai input (misalnya: (6,148,72,35,0,33.6,0
 10. Mencetak Hasil Prediksi
 Hasil dari prediksi ditampilkan. Jika model memprediksi 0, maka pasien tidak terkena diabetes; jika 1, maka pasien terkena diabetes.
 
-KESIMPULAN : Secara keseluruhan, kode ini menjalankan rangkaian proses mulai dari membaca dataset, memisahkan fitur dan label, melatih model klasifikasi, hingga mengevaluasi kinerjanya menggunakan data uji. Dengan memanfaatkan algoritma Logistic Regression, model mampu melakukan prediksi terhadap kemungkinan seseorang terkena penyakit jantung, serta menghasilkan laporan klasifikasi yang mencerminkan tingkat akurasi dan efektivitas model tersebut.
+KESIMPULAN : Secara keseluruhan, kode ini menjalankan rangkaian proses mulai dari membaca dataset, memisahkan fitur dan label, melatih model klasifikasi, hingga mengevaluasi kinerjanya menggunakan data uji. Dengan memanfaatkan algoritma Logistic Regression, model mampu melakukan prediksi terhadap kemungkinan seseorang terkena Diabetes, serta menghasilkan laporan klasifikasi yang mencerminkan tingkat akurasi dan efektivitas model tersebut.
 
 # Evaluasi Performa Model Logistic Regression Berdasarkan Classification Report
 
@@ -118,66 +103,6 @@ Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
 
 - Weighted avg:
 Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
-
-# Evaluasi Performa Model XGBClassifier Berdasarkan Classification Report 
-
-![image](https://github.com/user-attachments/assets/d1d30769-b9b4-4220-b58f-9fb89fe6c443)
-
-- Precision:
-1. Tidak Terkena Diabetes: 0.78 (78% dari prediksi tidak terkena diabetes adalah benar)
-2. Terkena Diabetes: 0.65 (65% dari prediksi terkena diabetes adalah benar)
-
-- Recall:
-1. Tidak Terkena Diabetes: 0.84 (84% dari pasien yang benar-benar tidak terkena diabetes berhasil dikenali oleh model)
-2. Terkena Diabetes: 0.56 (56% dari pasien yang benar-benar terkena diabetes berhasil dikenali)
-
-- F1-Score:
-1. Tidak Terkena Diabetes: 0.81 (Rata-rata harmonis dari precision dan recall)
-2. Terkena Diabetes: 0.60
-
-- Akurasi:
-74% (74% dari keseluruhan prediksi model adalah benar)
-
-- Macro avg:
-Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
-
-- Weighted avg:
-Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
-
-# Evaluasi Performa Model RandomForestClassifier Berdasarkan Classification Report 
-
-![image](https://github.com/user-attachments/assets/42ffc65b-6b6f-4744-9b34-5af029ff8982)
-
-- Precision:
-1. Tidak Terkena Diabetes: 0.77 (77% dari prediksi tidak terkena diabetes adalah benar)
-2. Terkena Diabetes: 0.58 (58% dari prediksi terkena diabetes adalah benar)
-
-- Recall:
-1. Tidak Terkena Diabetes: 0.78 (78% dari pasien yang benar-benar tidak terkena diabetes berhasil dikenali oleh model)
-2. Terkena Diabetes: 0.57 (57% dari pasien yang benar-benar terkena diabetes berhasil dikenali)
-
-- F1-Score:
-1. Tidak Terkena Diabetes: 0.78 (Rata-rata harmonis dari precision dan recall)
-2. Terkena Diabetes: 0.58
-
-- Akurasi:
-71% (71% dari keseluruhan prediksi model adalah benar)
-
-- Macro avg:
-Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
-
-- Weighted avg:
-Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
-
-# KESIMPULAN PERFOMA DARI 3 MODEL
- Rekomendasi:
-1. Validasi Model Lanjutan: Uji model dengan data yang berbeda dari data latih untuk memastikan model tidak hanya bekerja baik pada data yang sudah dikenalnya, tetapi juga mampu menggeneralisasi ke data baru.
-
-2. Tuning Hyperparameter: Lakukan pengaturan nilai hyperparameter secara optimal (misalnya menggunakan GridSearchCV) untuk meningkatkan performa model secara keseluruhan.
-
-3. Pengembangan Fitur (Feature Engineering): Analisis lebih lanjut terhadap fitur yang ada sangat disarankan. Ada kemungkinan fitur tertentu kurang relevan, atau bahkan ada fitur baru yang bisa ditambahkan untuk memperkuat prediksi.
-
-4. Cross-Validation: Gunakan teknik validasi silang untuk memastikan performa model konsisten dan tidak hanya bergantung pada satu pembagian data saja.
 
 Kesimpulan:
 Secara Keselruhan Model LogisticRegression memiliki performa yang paling baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil prediksi pada data baru, model mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes.
