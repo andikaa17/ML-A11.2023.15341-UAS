@@ -128,7 +128,7 @@ Gunakan teknik k-fold cross-validation untuk mengevaluasi model secara lebih kon
 
 # Langkah-langkah prediksi
 
-1. Input Data Pasien
+1. Input Data Pasien : 
 Data pasien dimasukkan dalam bentuk tuple seperti berikut:
 
 ![image](https://github.com/user-attachments/assets/a229b2e0-0a58-411a-b7ae-3cd8350b2743)
@@ -143,21 +143,21 @@ BMI: 33.6,
 Diabetes Pedigree Function: 0.627,
 Age: 50
 
-2. Mengubah Format ke Array Numpy
+2. Mengubah Format ke Array Numpy : 
 Data input dikonversi ke bentuk array menggunakan numpy agar bisa dibaca oleh model:
 
 ![image](https://github.com/user-attachments/assets/91a176a5-3330-4ec5-84a1-60ac12faadf7)
 
 
-4. Merapikan Bentuk Data
-Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape:
+3. Merapikan Bentuk Data : 
+Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape sebagai berikut:
 
 ![image](https://github.com/user-attachments/assets/80f52c8c-cd4c-4ecb-ad65-e0a56b5127ff)
 
 Langkah ini memastikan data memiliki 1 baris dengan banyak kolom, sesuai format yang diharapkan oleh model sklearn.
 
 
-5. Melakukan Prediksi
+4. Melakukan Prediksi : 
 Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau tidak:
 
 ![image](https://github.com/user-attachments/assets/2429bd08-f72b-448d-90a0-23e4436210e2)
@@ -165,7 +165,7 @@ Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau
 Output akan menampilkan nilai 0 jika pasien tidak terkena diabetes, atau 1 jika pasien terkena diabetes.
 
 
-6. Menampilkan Hasil
+5. Menampilkan Hasil Prediksi :
 Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
 
 ![image](https://github.com/user-attachments/assets/b6d0b971-82da-4b97-889e-67f32ed49d51)
@@ -174,7 +174,7 @@ Jika hasilnya 0, tampilkan pesan pasien tidak terkena diabetes.
 
 Jika hasilnya 1, tampilkan pesan pasien terkena diabetes.
 
-7. Hasil setelah diprediksi
+6. Hasil setelah diprediksi
 
 ![image](https://github.com/user-attachments/assets/6ed5e076-7b30-43d6-9357-4dd58f887d20)
 
