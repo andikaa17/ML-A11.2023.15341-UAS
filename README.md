@@ -46,9 +46,7 @@ Berdasarkan hasil visualisasi distribusi, fitur `Glucose` menunjukkan sebaran ni
 
 Selain itu, fitur seperti SkinThickness dan BloodPressure menunjukkan distribusi tidak merata, dengan nilai-nilai tertentu yang mendominasi. Pola-pola ini penting untuk dianalisis karena dapat memengaruhi performa model dalam membedakan antara pasien yang terkena dan tidak terkena diabetes.
 
-![download (3)](https://github.com/user-attachments/assets/b294f091-a146-45b6-aef2-770f72b49f10)
-
-![download (2)](https://github.com/user-attachments/assets/ebefd3b9-251d-4dde-ab13-c85c1b8f3283)
+![download (3)](https://github.com/user-attachments/assets/b294f091-a146-45b6-aef2-770f72b49f10) ![download (2)](https://github.com/user-attachments/assets/ebefd3b9-251d-4dde-ab13-c85c1b8f3283)
 
 
 
@@ -146,24 +144,28 @@ Age: 50
 
 2. Mengubah Format ke Array Numpy
 Data input dikonversi ke bentuk array menggunakan numpy agar bisa dibaca oleh model:
+
 ![image](https://github.com/user-attachments/assets/91a176a5-3330-4ec5-84a1-60ac12faadf7)
 
 
-3. Merapikan Bentuk Data
+4. Merapikan Bentuk Data
 Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape:
+
 ![image](https://github.com/user-attachments/assets/80f52c8c-cd4c-4ecb-ad65-e0a56b5127ff)
 
 
-4. Melakukan Prediksi
+5. Melakukan Prediksi
 Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau tidak:
+
 ![image](https://github.com/user-attachments/assets/2429bd08-f72b-448d-90a0-23e4436210e2)
 
 
-5. Menampilkan Hasil
+6. Menampilkan Hasil
 Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
+
 ![image](https://github.com/user-attachments/assets/b6d0b971-82da-4b97-889e-67f32ed49d51)
 
-6. Hasil setelah diprediksi
+7. Hasil setelah diprediksi
 
 ![image](https://github.com/user-attachments/assets/6ed5e076-7b30-43d6-9357-4dd58f887d20)
 
