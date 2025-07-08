@@ -165,14 +165,14 @@ Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau
 Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
 
 ![image](https://github.com/user-attachments/assets/b6d0b971-82da-4b97-889e-67f32ed49d51)
+Jika hasilnya 0, tampilkan pesan pasien tidak terkena diabetes.
+
+Jika hasilnya 1, tampilkan pesan pasien terkena diabetes.
 
 7. Hasil setelah diprediksi
 
 ![image](https://github.com/user-attachments/assets/6ed5e076-7b30-43d6-9357-4dd58f887d20)
 
-Jika hasilnya 0, tampilkan pesan pasien tidak terkena diabetes.
-
-Jika hasilnya 1, tampilkan pesan pasien terkena diabetes.
 
 KESIMPULANNYA : Model berhasil memproses data input pasien dan memberikan hasil prediksi. Jika output dari model adalah 1, maka pasien diperkirakan mengidap diabetes. Sebaliknya, jika hasilnya 0, maka pasien tidak terindikasi diabetes. Hasil ini dapat digunakan sebagai bahan pertimbangan awal dalam proses diagnosis, namun tidak menggantikan pemeriksaan medis yang sebenarnya. Evaluasi lebih lanjut tetap perlu dilakukan oleh tenaga kesehatan profesional.
 
