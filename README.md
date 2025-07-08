@@ -126,7 +126,7 @@ Karena data target (Outcome) tidak seimbang (lebih banyak pasien tidak terkena d
 3. Terapkan Validasi Silang (Cross-Validation):
 Gunakan teknik k-fold cross-validation untuk mengevaluasi model secara lebih konsisten, karena hanya memisahkan satu kali (train_test_split) bisa membuat evaluasi terlalu tergantung pada cara data dibagi.
 
-# Langkah proses prediksi menggunakan Logistic Regression 
+# Langkah-langkah prediksi
 
 1. Input Data Pasien
 Data pasien dimasukkan dalam bentuk tuple seperti berikut:
