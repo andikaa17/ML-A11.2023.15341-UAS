@@ -5,12 +5,12 @@
    Diabetes adalah penyakit yang banyak dialami masyarakat dan bisa menyebabkan komplikasi serius jika tidak ditangani sejak awal. Sayangnya, proses diagnosa sering butuh waktu dan bisa saja kurang akurat jika hanya mengandalkan pemeriksaan manual.
 Proyek ini bertujuan membuat model machine learning untuk memprediksi apakah seseorang berisiko diabetes atau tidak. Model ini menggunakan beberapa faktor seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, insulin, BMI, riwayat keluarga (silsilah), dan usia. Diharapkan model ini bisa membantu proses deteksi lebih cepat dan akurat.
 
-# TUJUANNYA YANG AKAN DICAPAI :
+# Tujuan yang akan dicapai :
 1. Membangun model machine learning yang dapat memprediksi kemungkinan seseorang terkena penyakit diabetes berdasarkan data medis.
-2. Mengevaluasi kinerja model menggunakan metrik evaluasI.
+2. Mengevaluasi kinerja model menggunakan metrik evaluasi.
 3. Membuat rekomendasi perbaikan
 
-# MODEL PENYELESAIAN
+# Model Penyelesaian
 
 ![image](https://github.com/user-attachments/assets/e0894434-2919-4055-a053-1e2650199c64)
 
@@ -52,7 +52,7 @@ Selain itu, fitur seperti SkinThickness dan BloodPressure menunjukkan distribusi
 
 
 
-  # PROSES LEARNING DAN MODELING
+  # Proses Learning Dan Modeling
 
 1. Import Library
  Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
@@ -125,7 +125,7 @@ Karena data target (Outcome) tidak seimbang (lebih banyak pasien tidak terkena d
 3. Terapkan Validasi Silang (Cross-Validation):
 Gunakan teknik k-fold cross-validation untuk mengevaluasi model secara lebih konsisten, karena hanya memisahkan satu kali (train_test_split) bisa membuat evaluasi terlalu tergantung pada cara data dibagi.
 
-# LANGKAH PROSES PREDIKSI MENGUNAKAN LOGISTIC REGRESSION
+# Langkah proses prediksi menggunakan Logistic Regression 
 
 1. Input Data Pasien
 Data pasien dimasukkan dalam bentuk tuple seperti berikut:
