@@ -133,13 +133,13 @@ Data pasien dimasukkan dalam bentuk tuple seperti berikut:
 ![image](https://github.com/user-attachments/assets/a229b2e0-0a58-411a-b7ae-3cd8350b2743)
 
 Nilai-nilai tersebut menggambarkan fitur yaitu : 
-Pregnancies: 6
-Glucose: 148
-BloodPressure: 72
-SkinThickness: 35
-Insulin: 0
-BMI: 33.6
-Diabetes Pedigree Function: 0.627
+Pregnancies: 6,
+Glucose: 148,
+BloodPressure: 72,
+SkinThickness: 35,
+Insulin: 0,
+BMI: 33.6,
+Diabetes Pedigree Function: 0.627,
 Age: 50
 
 2. Mengubah Format ke Array Numpy
