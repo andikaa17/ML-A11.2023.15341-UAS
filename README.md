@@ -12,7 +12,8 @@ Proyek ini bertujuan membuat model machine learning untuk memprediksi apakah ses
 
 # Model Penyelesaian
 
-![image](https://github.com/user-attachments/assets/385efbed-dd8d-4df5-9d29-e1f78aaa82fe)
+![image](https://github.com/user-attachments/assets/9b42d13b-df7a-4d2c-8488-e5c9b525282d)
+
 
 
 # Penjelasan Dataset, EDA dan Proses Features Dataset
