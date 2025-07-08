@@ -154,17 +154,22 @@ Karena model membutuhkan data dalam format dua dimensi, dilakukan reshape:
 
 ![image](https://github.com/user-attachments/assets/80f52c8c-cd4c-4ecb-ad65-e0a56b5127ff)
 
+Langkah ini memastikan data memiliki 1 baris dengan banyak kolom, sesuai format yang diharapkan oleh model sklearn.
+
 
 5. Melakukan Prediksi
 Model kemudian digunakan untuk memprediksi apakah pasien menderita diabetes atau tidak:
 
 ![image](https://github.com/user-attachments/assets/2429bd08-f72b-448d-90a0-23e4436210e2)
 
+Output akan menampilkan nilai 0 jika pasien tidak terkena diabetes, atau 1 jika pasien terkena diabetes.
+
 
 6. Menampilkan Hasil
 Hasil prediksi ditampilkan dengan kondisi sebagai berikut:
 
 ![image](https://github.com/user-attachments/assets/b6d0b971-82da-4b97-889e-67f32ed49d51)
+
 Jika hasilnya 0, tampilkan pesan pasien tidak terkena diabetes.
 
 Jika hasilnya 1, tampilkan pesan pasien terkena diabetes.
