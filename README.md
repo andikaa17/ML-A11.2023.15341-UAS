@@ -12,7 +12,8 @@ Proyek ini bertujuan membuat model machine learning untuk memprediksi apakah ses
 
 # Model Penyelesaian
 
-![image](https://github.com/user-attachments/assets/e0894434-2919-4055-a053-1e2650199c64)
+![image](https://github.com/user-attachments/assets/385efbed-dd8d-4df5-9d29-e1f78aaa82fe)
+
 
 # Penjelasan Dataset, EDA dan Proses Features Dataset
    Dataset yang digunakan dalam penelitian ini berasal dari situs web Kaggle, sebuah platform populer yang menyediakan berbagai dataset publik untuk keperluan pembelajaran mesin (machine learning) dan analisis data. Dataset ini bersifat terbuka, sehingga dapat diakses dan digunakan oleh siapa saja untuk keperluan penelitian dan pengembangan model prediktif. Dataset ini berisi data historis pasien yang terdiagnosis diabetes maupun yang tidak, dengan total 8 atribut medis dan 1 label (kelas). Atribut-atribut tersebut berkaitan dengan faktor risiko diabetes, seperti kadar glukosa, tekanan darah, indeks massa tubuh, serta riwayat keluarga.
