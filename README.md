@@ -55,12 +55,13 @@ Selain itu, fitur seperti SkinThickness dan BloodPressure menunjukkan distribusi
 
 
   # Proses Learning Dan Modeling
+  Pada proyek ini, dilakukan proses pembangunan model machine learning menggunakan algoritma Logistic Regression untuk memprediksi kemungkinan seseorang mengidap penyakit diabetes berdasarkan data medis yang tersedia. Dataset yang digunakan adalah diabetes.csv, yang memuat informasi pasien seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, kadar insulin, BMI, riwayat keluarga diabetes, serta usia.
 
 1. Import Library : 
- Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, dan classification_report dari scikit-learn diimpor untuk kebutuhan pengolahan data dan pelatihan model klasifikasi.
+ Library yang diperlukan seperti numpy, pandas, train_test_split, LogisticRegression, classification_report, dan accuracy_score dari scikit-learn diimpor untuk kebutuhan pengolahan data serta pelatihan dan evaluasi model klasifikasi.
 
 2. Membaca Data : 
-Data mengenai penyakit diabetes dibaca dari file CSV bernama diabetes.csv menggunakan pandas, dan disimpan ke dalam variabel diabetes_data.
+Data mengenai penyakit diabetes dibaca dari file CSV bernama diabetes.csv menggunakan pandas dan disimpan ke dalam variabel data.
 
 3. Memisahkan Fitur dan Label :
 Data dipisahkan menjadi fitur (X) dan label (Y), di mana X berisi semua kolom kecuali kolom Outcome, sedangkan Y berisi kolom Outcome sebagai target prediksi, dengan nilai 1 untuk pasien yang terkena diabetes dan 0 untuk yang tidak.
@@ -78,20 +79,23 @@ Ukuran data lengkap, data pelatihan (X_train), dan data pengujian (X_test) dicet
 Model klasifikasi Logistic Regression dibuat dan dilatih menggunakan data pelatihan (X_train dan Y_train).
 
 8. Evaluasi Model pada Data Pengujian :
-Model digunakan untuk memprediksi hasil pada data pengujian (X_test). Hasil prediksi kemudian dievaluasi menggunakan classification_report, yang menampilkan nilai precision, recall, dan F1-score untuk kedua kelas: pasien yang tidak terkena diabetes dan yang terkena diabetes.
+Model digunakan untuk memprediksi hasil pada data pengujian (X_test). Hasil prediksi kemudian dievaluasi menggunakan
+- classification_report, yang menampilkan nilai precision, recall, dan F1-score untuk kedua kelas: pasien yang tidak terkena diabetes dan yang terkena diabetes.
+- accuracy_score yang menunjukkan tingkat akurasi keseluruhan model dalam memprediksi.
 
-9. Prediksi Data Baru :
+10. Prediksi Data Baru :
 Sebuah data pasien baru diberikan sebagai input (misalnya: (6,148,72,35,0,33.6,0.627,50)), lalu data tersebut diubah menjadi array numpy dan di-reshape agar sesuai dengan format input model. Model kemudian memprediksi apakah pasien tersebut terkena diabetes atau tidak.
 
-10. Mencetak Hasil Prediksi :
+11. Mencetak Hasil Prediksi :
 Hasil dari prediksi ditampilkan. Jika model memprediksi 0, maka pasien tidak terkena diabetes; jika 1, maka pasien terkena diabetes.
 
 KESIMPULAN : Secara keseluruhan, kode ini menjalankan rangkaian proses mulai dari membaca dataset, memisahkan fitur dan label, melatih model klasifikasi, hingga mengevaluasi kinerjanya menggunakan data uji. Dengan memanfaatkan algoritma Logistic Regression, model mampu melakukan prediksi terhadap kemungkinan seseorang terkena Diabetes, serta menghasilkan laporan klasifikasi yang mencerminkan tingkat akurasi dan efektivitas model tersebut.
 
-# Evaluasi Performa Model Logistic Regression Berdasarkan Classification Report
+# Evaluasi Performa Model Logistic Regression Berdasarkan Classification Report, Accuracy_score
 
-![image](https://github.com/user-attachments/assets/4fe58840-9686-4994-8e5f-c4b8007eccd3)
+![image](https://github.com/user-attachments/assets/babba4f7-45de-4692-bb5a-d2031ded4f8a)
 
+- **Classification Report**
 - Precision:
 1. Tidak Terkena Diabetes: 0.77 (77% dari prediksi tidak terkena diabetes adalah benar)
 
@@ -113,6 +117,9 @@ Rata-rata tidak berbobot dari precision, recall, dan F1-score untuk kedua kelas.
 
 - Weighted avg:
 Rata-rata berbobot dari precision, recall, dan F1-score, memperhitungkan jumlah sampel di setiap kelas.
+
+**Accuracy_score**
+- Nilai accuracy_score sebesar 75.32% menunjukkan bahwa dari seluruh data uji, model berhasil memprediksi dengan benar sekitar 75 pasien dari setiap 100 pasien, baik untuk pasien yang terkena diabetes maupun yang tidak. Nilai ini menunjukkan performa global model yang cukup baik untuk digunakan sebagai alat bantu dalam skrining awal risiko diabetes.
 
 Kesimpulan:
 Secara keseluruhan, model Logistic Regression memiliki performa yang cukup baik dalam mengidentifikasi potensi penyakit diabetes. Berdasarkan hasil evaluasi pada data uji, model ini mampu mendeteksi individu yang berisiko terkena diabetes dengan tingkat akurasi yang memadai, yaitu sebesar 75%, serta nilai precision dan recall yang relatif baik. Hal ini menunjukkan bahwa model dapat digunakan sebagai alat bantu dalam proses skrining awal penyakit diabetes, meskipun diagnosis lebih lanjut tetap harus dilakukan oleh tenaga medis profesional.
