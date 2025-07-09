@@ -64,7 +64,7 @@ Selain itu, fitur seperti SkinThickness dan BloodPressure menunjukkan distribusi
 Data mengenai penyakit diabetes dibaca dari file CSV bernama diabetes.csv menggunakan pandas dan disimpan ke dalam variabel data.
 
 3. Memisahkan Fitur dan Label :
-Data dipisahkan menjadi fitur (X) dan label (Y), di mana X berisi semua kolom kecuali kolom Outcome, sedangkan Y berisi kolom Outcome sebagai target prediksi, dengan nilai 1 untuk pasien yang terkena diabetes dan 0 untuk yang tidak.
+Data dipisahkan menjadi fitur (X) dan label (Y), X berisi 768 data pasien dengan 8 kolom fitur medis, seperti jumlah kehamilan, kadar glukosa, tekanan darah, ketebalan kulit, insulin, BMI, riwayat keluarga diabetes, dan usia. Y berisi 768 data yang merupakan label Outcome, dengan nilai 1 untuk pasien yang terkena diabetes dan 0 untuk yang tidak.
 
 4. Mencetak Label :
 Label Y dicetak untuk melihat distribusi jumlah pasien yang terkena dan tidak terkena diabetes.
