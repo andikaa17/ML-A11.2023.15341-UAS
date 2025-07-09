@@ -1,3 +1,10 @@
+Nama      : Andika Apriyanto
+
+Nim       : A11.2023.15341
+
+Kelompok  : 4406
+
+
 # ML-UAS-2025
 
 # PREDIKSI PENYAKIT DIABETES MENGUNAKAN MODEL LOGISTIC REGRESSION
